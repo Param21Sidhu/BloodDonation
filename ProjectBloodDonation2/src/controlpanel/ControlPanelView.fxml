@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="640.0" prefHeight="600.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlpanel.ControlPanelViewController">
+   <children>
+      <Label layoutX="-4.0" layoutY="-1.0" prefHeight="53.0" prefWidth="682.0" style="-fx-background-color: black;" text="                   CONTROL PANEL" textFill="#d4da7d" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="52.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogPic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="268.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@—Pngtree—public%20welfare%20blood%20donation_5398288.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="474.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@avail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="167.0" layoutX="60.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="47.0" fitWidth="200.0" layoutX="27.0" layoutY="242.0" onMouseClicked="#doRegister" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cooltext415722537927205.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="200.0" layoutX="254.0" layoutY="238.0" onMouseClicked="#doDonation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cooltext415722802721358.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="200.0" layoutX="474.0" layoutY="238.0" onMouseClicked="#doAvailable" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cooltext415722832705536.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@History.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="254.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Issue.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="200.0" layoutX="49.0" layoutY="523.0" onMouseClicked="#doHistory" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cooltext415722902579940.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="200.0" layoutX="227.0" layoutY="524.0" onMouseClicked="#diIssue" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cooltext415722957774363.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

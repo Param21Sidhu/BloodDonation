@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="600.0" minWidth="590.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="projectTableView.ProTableViewController">
+   <children>
+      <Label prefHeight="53.0" prefWidth="592.0" style="-fx-background-color: black;" text="            Explore Donors Info" textFill="#d4d781">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="114.0" prefHeight="36.0" prefWidth="145.0" text="Blood Group">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="txtCombo" editable="true" layoutX="169.0" layoutY="120.0" prefWidth="150.0" style="-fx-border-color: green; -fx-border-radius: 20;" />
+      <Button layoutX="412.0" layoutY="64.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="36.0" prefWidth="99.0" style="-fx-background-color: #f8bbf3;" text="Fetch" textFill="#22269e">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="402.0" layoutY="145.0" mnemonicParsing="false" onAction="#doShowAll" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #f8bbf3;" text="Show-All" textFill="#22269e">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <TableView fx:id="txtTable" layoutX="-1.0" layoutY="271.0" prefHeight="329.0" prefWidth="592.0" />
+   </children>
+</AnchorPane>

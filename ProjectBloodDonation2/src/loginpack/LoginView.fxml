@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="521.0" minWidth="400.0" prefHeight="521.0" prefWidth="437.0" style="-fx-background-color: #ffccff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="loginpack.LoginViewController">
+   <children>
+      <Label prefHeight="49.0" prefWidth="437.0" style="-fx-background-color: black;" text="               LOGIN " textFill="#cdd06c">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="41.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="168.0" fitWidth="200.0" layoutX="135.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogPic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="58.0" layoutY="291.0" prefHeight="38.0" prefWidth="77.0" text="Email" textFill="#0f571b" underline="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.3">
+               <color>
+                  <Color red="0.6447368264198303" green="0.2178971767425537" blue="0.4953429698944092" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="217.0" layoutY="298.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="58.0" layoutY="362.0" prefHeight="43.0" prefWidth="127.0" text="Password" textFill="#0f571b" underline="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.3">
+               <color>
+                  <Color red="0.6447368264198303" green="0.2178971767425537" blue="0.4953429698944092" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="159.0" layoutX="151.0" layoutY="458.0" onMouseClicked="#txtLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cooltext415720027409404.gif" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPwd" layoutX="217.0" layoutY="371.0" prefHeight="31.0" prefWidth="187.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

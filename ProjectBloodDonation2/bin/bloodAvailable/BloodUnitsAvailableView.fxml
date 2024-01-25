@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="txtAnchor" minHeight="600.0" minWidth="560.0" style="-fx-background-image: url(bground.jpg);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodAvailable.BloodUnitsAvailableViewController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="47.0" prefWidth="560.0" style="-fx-background-color: black;" text="              Blood Units Available" textAlignment="CENTER" textFill="#d6da5e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="80.0" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #f5ccf0;" text="A+" textFill="#3c0936">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAp" disable="true" editable="false" layoutX="238.0" layoutY="85.0" prefHeight="27.0" prefWidth="85.0" style="-fx-border-color: green; -fx-border-style: dashed;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="141.0" layoutY="145.0" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #f5ccf0;" text="A-" textFill="#3c0936">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAn" disable="true" editable="false" layoutX="238.0" layoutY="151.0" prefHeight="27.0" prefWidth="85.0" style="-fx-border-color: green; -fx-border-style: dashed;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="141.0" layoutY="213.0" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #f5ccf0;" text="B+" textFill="#3c0936">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBp" disable="true" editable="false" layoutX="238.0" layoutY="219.0" prefHeight="27.0" prefWidth="85.0" style="-fx-border-color: green; -fx-border-style: dashed;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="141.0" layoutY="281.0" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #f5ccf0;" text="B-" textFill="#3c0936">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBn" disable="true" editable="false" layoutX="238.0" layoutY="287.0" prefHeight="27.0" prefWidth="85.0" style="-fx-border-color: green; -fx-border-style: dashed;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="141.0" layoutY="349.0" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #f5ccf0;" text="O+" textFill="#3c0936">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOp" disable="true" editable="false" layoutX="238.0" layoutY="355.0" prefHeight="27.0" prefWidth="85.0" style="-fx-border-color: green; -fx-border-style: dashed;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="141.0" layoutY="418.0" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: #f5ccf0;" text="O-" textFill="#3c0936">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOn" disable="true" editable="false" layoutX="238.0" layoutY="424.0" prefHeight="27.0" prefWidth="85.0" style="-fx-border-color: green; -fx-border-style: dashed;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="141.0" layoutY="487.0" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: #f5ccf0;" text="AB+" textFill="#3c0936">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="556.0" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: #f5ccf0;" text="AB-" textFill="#3c0936">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtABp" disable="true" editable="false" layoutX="238.0" layoutY="493.0" prefHeight="27.0" prefWidth="85.0" style="-fx-border-color: green; -fx-border-style: dashed;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtABn" disable="true" editable="false" layoutX="238.0" layoutY="562.0" prefHeight="27.0" prefWidth="85.0" promptText="ss" style="-fx-border-color: green; -fx-border-style: dashed;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="346.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@blood.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="txtPic1" fitHeight="150.0" fitWidth="200.0" layoutX="346.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bgro.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="560.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="issueBlood.IssueBloodViewController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="47.0" prefWidth="564.0" style="-fx-background-color: black;" text="             Issue Blood Units" textFill="#c3bb76">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="77.0" prefHeight="36.0" prefWidth="131.0" text="Needy Name" textFill="#d02121">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <TextField fx:id="txtName" layoutX="163.0" layoutY="83.0" style="-fx-border-style: dashed; -fx-border-color: red; -fx-background-color: white;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="147.0" prefHeight="36.0" prefWidth="131.0" text="Mobile" textFill="#d02121">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="163.0" layoutY="152.0" style="-fx-border-style: dashed; -fx-border-color: red; -fx-background-color: white;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="223.0" prefHeight="36.0" prefWidth="131.0" text="Blood Group" textFill="#d02121">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <Label layoutX="288.0" layoutY="223.0" prefHeight="36.0" prefWidth="131.0" text="No. of Units" textFill="#d02121">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <TextField fx:id="txtUnit" layoutX="411.0" layoutY="228.0" prefHeight="26.0" prefWidth="71.0" style="-fx-border-style: dashed; -fx-border-color: red; -fx-background-color: white;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="300.0" prefHeight="36.0" prefWidth="92.0" text="Hospital" textFill="#d02121">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <TextArea fx:id="txtHos" layoutX="124.0" layoutY="300.0" prefHeight="53.0" prefWidth="139.0" />
+      <Label layoutX="281.0" layoutY="300.0" prefHeight="36.0" prefWidth="92.0" text="Purpose" textFill="#d02121">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <TextArea fx:id="txtPur" layoutX="377.0" layoutY="300.0" prefHeight="53.0" prefWidth="139.0" />
+      <Label layoutX="98.0" layoutY="401.0" prefHeight="36.0" prefWidth="131.0" text="Date of Issue" textFill="#d02121">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <DatePicker fx:id="txtDate" layoutX="234.0" layoutY="407.0" prefHeight="25.0" prefWidth="139.0" />
+      <Button layoutX="155.0" layoutY="499.0" mnemonicParsing="false" onAction="#doUpload" prefHeight="36.0" prefWidth="148.0" style="-fx-background-color: #EEB9EF;" text="Upload" textFill="#1b1bab">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="354.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@bdm.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtBG" layoutX="164.0" layoutY="228.0" prefHeight="26.0" prefWidth="84.0" style="-fx-border-style: dashed; -fx-border-color: red; -fx-background-color: white;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

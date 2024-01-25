@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="650.0" minWidth="590.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="donormasWala.DonorViewController">
+   <children>
+      <Label prefHeight="39.0" prefWidth="593.0" style="-fx-background-color: black;" text="                 DONOR REGISTRATION" textFill="#cfe458">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="116.0" prefHeight="26.0" prefWidth="115.0" text="Mobile No.">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMob" layoutX="84.0" layoutY="149.0" style="-fx-border-color: green; -fx-border-style: dashed;" />
+      <ImageView fx:id="txtPic" fitHeight="150.0" fitWidth="193.0" layoutX="391.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="29.0" layoutY="233.0" prefHeight="28.0" prefWidth="81.0" text="Name">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="100.0" layoutY="234.0" style="-fx-border-color: green; -fx-border-style: dashed;" />
+      <Button fx:id="txtBrowse" layoutX="358.0" layoutY="230.0" mnemonicParsing="false" onAction="#doBrowse" prefHeight="35.0" prefWidth="92.0" text="Browse">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="29.0" layoutY="308.0" prefHeight="28.0" prefWidth="81.0" text="Gender">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="txtGen" layoutX="110.0" layoutY="310.0" prefHeight="25.0" prefWidth="108.0" />
+      <Label layoutX="244.0" layoutY="309.0" prefHeight="28.0" prefWidth="65.0" text="Age">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAge" layoutX="287.0" layoutY="310.0" prefHeight="27.0" prefWidth="57.0" style="-fx-border-color: green; -fx-border-style: dashed;" />
+      <Label layoutX="365.0" layoutY="308.0" prefHeight="28.0" prefWidth="100.0" text="City/Town">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="txtCity" layoutX="472.0" layoutY="310.0" prefHeight="25.0" prefWidth="115.0" />
+      <Label layoutX="29.0" layoutY="388.0" prefHeight="28.0" prefWidth="132.0" text="Blood Group">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="txtBG" layoutX="164.0" layoutY="390.0" prefHeight="25.0" prefWidth="108.0" visibleRowCount="5" />
+      <Label layoutX="297.0" layoutY="388.0" prefHeight="28.0" prefWidth="81.0" text="Address">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtAdd" layoutX="403.0" layoutY="388.0" prefHeight="119.0" prefWidth="169.0" />
+      <Label layoutX="29.0" layoutY="464.0" prefHeight="28.0" prefWidth="139.0" text="Disease(if any)">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDis" layoutX="167.0" layoutY="449.0" prefHeight="69.0" prefWidth="169.0" />
+      <Button layoutX="54.0" layoutY="551.0" mnemonicParsing="false" onAction="#doNew" prefHeight="35.0" prefWidth="92.0" text="New" textFill="#3d6f38">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="307.0" layoutY="551.0" mnemonicParsing="false" onAction="#doRegister" prefHeight="35.0" prefWidth="193.0" text="Register Now" textFill="#3d6f38">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="172.0" layoutY="601.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="35.0" prefWidth="92.0" text="Update" textFill="#3d6f38">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="472.0" layoutY="601.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="35.0" prefWidth="92.0" text="Delete" textFill="#3d6f38">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="251.0" layoutY="144.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="35.0" prefWidth="92.0" style="-fx-background-color: #6bc6b5;" text="Fetch" textFill="#e83535">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Button>
+      <Separator layoutY="207.0" prefHeight="0.0" prefWidth="593.0" />
+      <Separator layoutX="11.0" layoutY="283.0" prefHeight="0.0" prefWidth="593.0" style="-fx-background-color: green;" />
+      <Separator layoutX="11.0" layoutY="361.0" prefHeight="0.0" prefWidth="593.0" style="-fx-background-color: green;" />
+      <Separator layoutX="1.0" layoutY="433.0" prefHeight="3.0" prefWidth="389.0" style="-fx-background-color: green;" />
+      <Separator layoutX="11.0" layoutY="533.0" prefHeight="3.0" prefWidth="593.0" style="-fx-background-color: green;" />
+   </children>
+</AnchorPane>
